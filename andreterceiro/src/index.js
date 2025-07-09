@@ -19,7 +19,11 @@ async function rollDice() {
 }
 
 async function playerRaceEngine(character1, character2) {
+    for (let round = 1; round <= 5; round++) {
+        console.log(`Rodada: ${round}`);
+    }
 
+    // Sortear bloco
 }
 
 (async function main() {
