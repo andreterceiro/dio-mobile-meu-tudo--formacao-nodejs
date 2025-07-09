@@ -33,6 +33,15 @@ async function playerRaceEngine(character1, character2) {
         // teste de habilidade
         let totalTestSkill1 = 0; 
         let totalTestSkill2 = 0;
+
+        if (block == "RETA") {
+            totalTestSkill1 = diceResult1 + character1.VELOCIDADE;
+            totalTestSkill2 = diceResult2 + character1.VELOCIDADE;
+        } else if (block == "CURVA") {
+            totalTestSkill1 = diceResult1 + character1.MANOBRABILIDADE;
+            totalTestSkill2 = diceResult2 + character1.MANOBRABILIDADE;
+        } else {
+        }
     }
 }
 
