@@ -53,6 +53,16 @@ async function playerRaceEngine(character1, character2) {
             let powerResult1 = diceResult1 + character1.PODER;
             let powerResult2 = diceResult2 + character2.PODER;
         }
+
+        // Verificando o vencedor
+
+        if (totalTestSkill1 > totalTestSkill2) {
+            console.log(`${character1.NOME} marcou 1 ponto`);
+            character1.PONTOS++;
+        } else if (totalTestSkill2 > totalTestSkill1) {
+            console.log(`${character2.NOME} marcou 1 ponto`);
+            character2.PONTOS++;
+        }
     }
 }
 
