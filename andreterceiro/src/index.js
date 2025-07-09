@@ -19,5 +19,5 @@ async function rollDice() {
 }
 
 (async function main() {
-    console.log("Initializing the game")
+    console.log(`Corrida entre ${player1.NOME} e ${player2.NOME} começando...\n`);
 })();
